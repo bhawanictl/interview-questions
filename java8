@@ -1,3 +1,37 @@
-#Some links : 
+# Some links : 
 https://www.joda.org/joda-time/
 https://www.joda.org/joda-time/quickstart.html
+
+# Joda-Time
+## About
+Joda-Time provides a quality replacement for the Java date and time classes.
+Joda-Time is the de facto standard date and time library for Java prior to Java SE 8. Users are now asked to migrate to java.time (JSR-310).
+Joda-Time is licensed under the business-friendly Apache 2.0 licence.
+## Features
+A selection of key features:
+•	LocalDate - date without time
+•	LocalTime - time without date
+•	Instant - an instantaneous point on the time-line
+•	DateTime - full date and time with time-zone
+•	DateTimeZone - a better time-zone
+•	Duration and Period - amounts of time
+•	Interval - the time between two instants
+•	A comprehensive and flexible formatter-parser
+## Why Joda Time?
+The standard date and time classes prior to Java SE 8 are poor. By tackling this problem head-on, Joda-Time became the de facto standard date and time library for Java prior to Java SE 8. Note that from Java SE 8 onwards, users are asked to migrate to java.time (JSR-310) - a core part of the JDK which replaces this project.
+The design allows for multiple calendar systems, while still providing a simple API. The “default” calendar is the ISO8601 standard which is used by many other standards. The Gregorian, Julian, Buddhist, Coptic, Ethiopic and Islamic calendar systems are also included. Supporting classes include time zone, duration, format and parsing.
+## Rationale
+Here are some of our reasons for developing and using Joda-Time:
+•	Easy to Use. Calendar makes accessing ‘normal’ dates difficult, due to the lack of simple methods. Joda-Time has straightforward field accessors such as getYear() or getDayOfWeek().
+•	Easy to Extend. The JDK supports multiple calendar systems via subclasses of Calendar. This is clunky, and in practice it is very difficult to write another calendar system. Joda-Time supports multiple calendar systems via a pluggable system based on the Chronology class.
+•	Comprehensive Feature Set. The library is intended to provide all the functionality that is required for date-time calculations. It already provides out-of-the-box features, such as support for oddball date formats, which are difficult to replicate with the JDK.
+•	Up-to-date Time Zone calculations. The time zone implementation is based on the public tz database, which is updated several times a year. New Joda-Time releases incorporate all changes made to this database. Should the changes be needed earlier, manually updating the zone data is easy.
+•	Calendar support. The library provides 8 calendar systems.
+•	Easy interoperability. The library internally uses a millisecond instant which is identical to the JDK and similar to other common time representations. This makes interoperability easy, and Joda-Time comes with out-of-the-box JDK interoperability.
+•	Better Performance Characteristics. Calendar has strange performance characteristics as it recalculates fields at unexpected moments. Joda-Time does only the minimal calculation for the field that is being accessed.
+•	Good Test Coverage. Joda-Time has a comprehensive set of developer tests, providing assurance of the library’s quality.
+•	Complete Documentation. There is a full User Guide which provides an overview and covers common usage scenarios. The javadoc is extremely detailed and covers the rest of the API.
+•	Maturity. The library has been under active development since 2002. It is a mature and reliable code base. A number of related projects are now available.
+•	Open Source. Joda-Time is licenced under the business friendly Apache License Version 2.0.
+
+
